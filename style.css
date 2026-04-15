@@ -768,6 +768,39 @@
     /*Media Querys*/
 
     /*Tablet*/
+ @media (max-width: 768px) {
+    .nav {
+        position: fixed;
+        bottom: 10px;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0.8rem 1.2rem;
+        gap: 1.2rem;
+
+        border-radius: 30px;
+    }
+    .nav a {
+        writing-mode: horizontal-tb; 
+        transform: none;
+
+        font-size: 1.1rem;
+        padding: 0.4rem 0.6rem;
+    }
+    .nav {
+        z-index: 9999 !important;
+    }
+    body.home .nav,
+    body.home.scrolled .nav {
+        z-index: 9999 !important;
+        pointer-events: auto;
+    }
+}
     @media (min-width: 768px) {
         
      /*Home-Seite*/
