@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Larissa Schultz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Doto:wght@100..900&family=Italiana&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="detail">
+    
+    <nav class="nav">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="index.html#projects">projects</a>
+        <a href="kontakt.html">contact</a>
+    </nav>
+
+    <main class="carousel-wrapper">
+        <div class="carousel">
+            <section class="project">
+                <h1>3D look development</h1>
+                <h2>nostalgia.exe</h2>
+
+                    <div class="project-grid stacked">
+                        <img src="media/3D/nostalgia.exe.png" class="edited popup-trigger" data-popup="project1" width="100%" height="auto" alt="Digital artwork showing a dystopian sci-fi version of a real urban street in Flensburg. The scene is transformed into a rainy night setting with robots, neon signs, and surveillance elements. This image is part of a before-and-after comparison project.">
+                    </div>
+
+                <h2>BULLS BIKE technical model</h2>
+
+                    <div class="project-grid stacked">
+                        <img src="media/3D/bulls bike.png" class="popup-trigger" data-popup="project2" width="100%" height="auto" alt="Contemporary digital still life in pink tones, featuring a Barbie doll, a dollhouse, a toy cash register, a pacifier, and a crown. The surreal arrangement critiques femininity, childhood stereotypes, and consumerism.">
+                    </div>
+            </section>
+        </div>
+    </main>
+
+
+    <div class="description-overlay" id="descriptionPopup">
+        <div class="description-content"></div>
+    </div>
+
+
+    <div id="project1" class="popup-data" style="display: none;">
+        <h3>nostalgia.exe</h3>
+        <h4>project description</h4>
+            <p>In addition to my largest 3D project to date, “claw machine,” I have also completed other small projects and improved my skills.<br>
+                For this project, which I have named ‘nostalgia.exe’, I focused on rendering and compositing. <br>
+                The objects in the image are assets, and the goal was to arrange them in an appealing way, then integrate them into a background image and shade them with the appropriate HDRI. <br>
+                I also experimented a bit with light and self-illuminating material to make the lamp create realistic ambient lighting. <br>
+            </p>
+    </div>
+
+    <div id="project2" class="popup-data" style="display: none;">
+        <h3>BULLS BIKE technical model</h3>
+        <h4>project description</h4>
+            <p>This rendering shows a Bulls bicycle, which I modeled in 3D based on a few images. <br>
+                I then rendered it using simple materials and lighting.<br>
+                The focus of this project was on creating a detailed replica of the bicycle as a 3D mesh, in which I reproduced the smallest details such as screws, tire tread, chains, and gear shifters.<br>
+            </p>
+    </div>
+</body>
+
+<script src="script.js"></script>

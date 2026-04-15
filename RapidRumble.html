@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Larissa Schultz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Doto:wght@100..900&family=Italiana&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="detail">
+    
+  <nav class="nav">
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="index.html#projects">projects</a>
+    <a href="kontakt.html">contact</a>
+  </nav>
+
+  <main class="carousel-wrapper">
+    <div class="carousel">
+
+      <section class="project">
+        <h1>graphic design</h1>
+        <h2>game design RAPID RUMBLE</h2>
+
+          <div class="project-grid vertical-split-layout">
+            <div class="left-column">
+              <div class="logo-wrapper">
+                <img src="media/graphic-design/RR Logo v6 Final.png" class="popup-trigger logo" data-popup="project2" width="100%" height="auto" alt="Logo of the card game Rapid Rumble featuring two large stylized 'R' letters in orange and blue. The words 'RAPID' in red and 'RUMBLE' in yellow are placed next to the corresponding letters.">
+              </div>
+              <div class="card-wrapper">
+                <div class="card popup-trigger" data-popup="project2" >
+                  <div class="card-inner">
+                    <div class="card-front">
+                      <img src="media/graphic-design/RR Karte Design Aufbau.png" width="100%" height="auto" alt="Front design of a red playing card from Rapid Rumble. It features the number 8 in orange, and the word 'Nachbeben' written at the bottom in bold orange letters.">
+                    </div>
+                    <div class="card-back">
+                      <img src="media/graphic-design/RR Karte Rückseite.png" width="100%" height="auto" alt="Back side of a playing card from the game Rapid Rumble, divided into four colored quadrants: red (top left), yellow (top right), orange (bottom left), and blue (bottom right). The red and blue one with a stylized white 'R' symbol.">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-column">
+              <img src="media/graphic-design/RR Verpackung neu.png" class="popup-trigger" data-popup="project2" width="100%" height="auto" alt="Packaging design for the card game Rapid Rumble. The front shows the logo with colorful cards fanned out, each labeled with actions like 'Absorption' and 'Nachbeben'. Icons below indicate it's for 2 players and ages 7 and up.">
+            </div>
+          </div>
+      </section>
+    </div>
+  </main>
+
+
+  <div class="description-overlay" id="descriptionPopup">
+      <div class="description-content"></div>
+  </div>
+
+  <div id="project2" class="popup-data" style="display: none;">
+    <h3>game design RAPID RUMBLE</h3>
+    <h4>project description</h4>
+      <p>'Rapid Rumble' is a competitive card game based on classics such as Yu-Gi-Oh!, Hearthstone and Magic: The Gathering. However, it deliberately avoids pay-to-win mechanics and complex deck building. The aim was to create a game that can be played straight away, is easy to understand, and still offers strategic depth. <br>
+        Together with two fellow students, the game mechanics were developed in which two players face each other in quick, turn-based duels with a common set of number cards and a few special cards. Rather than having to buy or collect cards, the set includes everything needed for a fair game. The focus is on tactics, reactions, and the clever use of available cards, rather than external card value. <br>
+        I developed the visual appearance entirely myself, including the logo, card design, colour system and packaging. In terms of colour, the game is based on a powerful primary colour concept (red, yellow, blue and orange) that signals energy, excitement and fun. The typography borrows from retro-futuristic arcade aesthetics, matching the game's fast-paced, combative nature. <br>
+        The logo's mirror-image 'R' symbolises the clash between two equal players. The backs of the cards and the packaging design fit harmoniously with the brand identity, enabling recognition even amongst other games. <br>
+      </p>
+  </div>
+</body>
+
+<script src="script.js"></script>
