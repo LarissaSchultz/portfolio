@@ -69,3 +69,19 @@ if (carousel && projects.length > 0) {
     updateCarousel(); // wichtig!
 }
 
+//Autoplay preload
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach(v => {
+    v.muted = true;
+    v.playsInline = true;
+
+    const playPromise = v.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        console.log("Autoplay blocked");
+      });
+    }
+  });
+});
